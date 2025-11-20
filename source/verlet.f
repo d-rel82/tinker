@@ -23,6 +23,7 @@ c
       use ielscf
       use moldyn
       use polar
+      use strvar
       use units
       use usage
       implicit none
@@ -154,6 +155,7 @@ c
 c
 c     compute statistics and save trajectory for this step
 c
+      call prtstres (istep,stress)
       call mdstat (istep,dt,etot,epot,eksum,temp,pres)
       call mdsave (istep,dt,epot,eksum)
       call mdrest (istep)

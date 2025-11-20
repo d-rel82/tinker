@@ -226,6 +226,10 @@ c     perform the setup functions needed to run dynamics
 c
       call mdinit (dt)
 c
+c     check for stress tensor output keywords
+c
+      call stresinit (dt)
+c
 c     print out a header line for the dynamics computation
 c
       if (integrate .eq. 'VERLET') then

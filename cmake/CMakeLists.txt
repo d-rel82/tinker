@@ -144,15 +144,15 @@ set(_FILES
     params paths pbstuf pdb phipsi picalc piorbs pistuf pitors pme
     pmestuf pmpb polar polgrp polopt polpcg polpot poltcg polymer potent
     potfit predict pressure prmkey promo prtarc prtdyn prterr prtfrc
-    prtint prtmol2 prtpdb prtprm prtseq prtuind prtvel prtxyz ptable
+    prtint prtmol2 prtpdb prtprm prtseq prtuind prtvel prtstres prtxyz ptable
     qmstuf qrsolve quatfit random rattle readcart readdcd readdyn
     readgau readgdma readint readmbis readmol readmol2 readpdb readprm
     readseq readxyz refer repel replica reppot resdue respa restrn rgddyn
     rgdstep richmond rigid ring rings rmsfit rotbnd rotlist rotpole
     rxnfld rxnpot scales sdstep search sequen server setprm shakeup
     shapes shunt sigmoid simplex sizes sktstuf socket solpot solute sort
-    square stodyn strbnd strtor suffix surface surfatom switch syntrn
-    tarray tcgstuf temper tettor tettors titles tncg torphase torpot
+    square stodyn strbnd stresinit strtor strvar suffix surface surfatom switch
+    syntrn tarray tcgstuf temper tettor tettors titles tncg torphase torpot
     torque tors torsions tortor tree trimtext tritor tritors unionball
     unitcell units uprior urey urypot usage valfit vdw vdwpot verlet
     version vibs virial volume warp xtals xyzatm zatom zclose zcoord
@@ -173,13 +173,13 @@ install(
 set(_BINS
     alchemy analyze anneal arcedit bar correlate critical crystal
     diffuse distgeom document dynamic freefix gda intedit intxyz
-    mdavg minimize minirot minrigid mol2xyz molxyz monte newton
-    newtrot nucleic optimize optirot optrigid path pdbxyz polarize
-    poledit potential prmedit protein pss pssrigid pssrot radial
-    saddle scan sniffer spacefill spectrum superpose testgrad
-    testhess testpair testpol testrot testsurf testvir timer timerot
-    torsfit valence vibbig vibrate vibrot xtalfit xtalmin xyzedit
-    xyzint xyzmol2 xyzpdb
+    minimize minirot minrigid mol2xyz molxyz monte newton newtrot
+    nucleic optimize optirot optrigid path pdbxyz polarize poledit
+    potential prmedit protein pss pssrigid pssrot radial saddle scan
+    sniffer spacefill spectrum superpose testgrad testhess testpair
+    testpol testrot testsurf testvir timer timerot torsfit valence
+    vibbig vibrate vibrot xtalfit xtalmin xyzedit xyzint xyzmol2
+    xyzpdb
 )
 
 foreach(_BIN IN LISTS _BINS)
